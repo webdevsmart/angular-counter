@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex justify-content-center">
+      <app-value-renderer [value]="countA$ | async"></app-value-renderer>
+      <app-value-renderer [value]="countB$ | async"></app-value-renderer>
+    </div>
+  </div>
+  <div class="card-footer text-center">
+    <button (click)="start()" class="btn btn-primary btn-start">Start</button>
+    <button (click)="stop()" class="btn btn-success btn-pause ml-3">Pause</button>
+    <button (click)="reset()" class="btn btn-danger btn-stop ml-3">Stop</button>
+  </div>
+</div>
